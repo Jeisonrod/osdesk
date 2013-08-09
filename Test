@@ -1,0 +1,11 @@
+<script type="text/javascript">
+var addToHomeConfig = {
+	animationIn: 'bubble',
+	animationOut: 'drop',
+	lifespan:10000,
+	expire:2,
+	touchIcon:true,
+	message:'This is my website.Please add it to your home screen. this was all made by jeison rod of lowesgrove. Your device is an <strong>%device</strong>. The action icon is `%icon`.'
+};
+</script>
+<script type="application/javascript" src="js/add2home.js"></script>
