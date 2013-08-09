@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="ja" />
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+    <!--touch icon-->
+    <link rel="apple-touch-icon-precomposed" size="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" size="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" size="57x57" href="img/apple-touch-icon-57x57.png" />
+    <!--startup image-->
+    <link rel="apple-touch-startup-image"  href="img/apple-touch-startup-image-748x1024.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+    <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-320x460.png" media="screen and (max-device-width: 320px)" />
+    <!--layout-->
+    <link rel="stylesheet" href="css/ipad-layout.css" media="screen and (min-device-width: 481px) and (max-device-width: 1024px)" />
+    <title>vingow</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+// if iOS in home screen.
+$(function(){
+    if (("standalone" in window.navigator) && !window.navigator.standalone){
+        document.write('<link rel="stylesheet" href="js/add2home/add2home.css">');
+        document.write('<script type="application/javascript" src="js/add2home/add2home.js"><\/s' + 'cript>');
+    }
+    var ori = window.orientation;
+});
+    </script>
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo.png" /></h1>
+    </header>
+    <div id="container">
+        hogehogefoofoovar
+    </div>
+    <footer>
+        footer here.
+    </footer>
+</body>
+</html>
